@@ -1,8 +1,8 @@
-"lua require('_init')
+lua require('config.lazy')
 
 "colorscheme evening
 "colorscheme murphy
-colorscheme wildcharm
+"colorscheme wildcharm
 syntax on
 set belloff=all
 
