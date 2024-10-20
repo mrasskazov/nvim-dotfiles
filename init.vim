@@ -1,4 +1,5 @@
 lua require('config.lazy')
+lua require("lazy").setup("plugins")
 
 "colorscheme evening
 "colorscheme murphy
