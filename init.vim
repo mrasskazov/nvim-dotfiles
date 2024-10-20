@@ -19,6 +19,7 @@ set smartindent
 
 set nowrap
 set number
+set norelativenumber
 
 set iskeyword+=-
 "set cc=80
@@ -28,7 +29,7 @@ set nowrapscan
 set backspace=indent,eol,start
 
 set ruler
-"set completeopt=menuone,noselect
+set completeopt=menuone,noselect
 "set completeopt-=preview
 "set completeopt=menuone,longest,preview
 "set gcr=a:blinkon0
