@@ -4,6 +4,7 @@ lua require("config.lazy")
 "colorscheme evening
 "colorscheme murphy
 "colorscheme wildcharm
+colorscheme tokyonight-night
 syntax on
 set belloff=all
 
