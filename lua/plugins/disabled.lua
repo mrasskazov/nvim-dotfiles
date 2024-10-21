@@ -12,4 +12,5 @@ return {
   { "rcarriga/nvim-notify", enabled = false },
   --{ "MunifTanjim/nui.nvim", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
 }

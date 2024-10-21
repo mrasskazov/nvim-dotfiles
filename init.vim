@@ -8,7 +8,7 @@ colorscheme tokyonight-night
 syntax on
 set belloff=all
 
-set mouse
+set mouse=
 
 set tabstop=2
 set softtabstop=2
