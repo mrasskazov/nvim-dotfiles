@@ -68,4 +68,5 @@ au BufRead,BufNewFile *.Dockerfile set filetype=dockerfile
 au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
 au BufRead,BufNewFile *.Jenkinsfile set filetype=groovy
 au BufRead,BufNewFile Jenkinsfile* set filetype=groovy
-au BufRead,BufNewFile *.sh set filetype=sh set iskeyword+=-
+au BufRead,BufNewFile *.sh set filetype=sh
+"set iskeyword+=-
