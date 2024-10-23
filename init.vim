@@ -53,6 +53,21 @@ vnoremap * y :execute ":let @/=@\""<CR> :execute "set hlsearch"<CR>
 vnoremap Y :execute ":!clip.exe"<CR> u
 set clipboard=unnamedplus
 
+" help clipboard: For Windows WSL, try this g:clipboard definition:
+let g:clipboard = {
+            \   'name': 'WslClipboard',
+            \   'copy': {
+            \      '+': 'clip.exe',
+            \      '*': ['tmux', 'load-buffer', '-'],
+            \    },
+            \   'paste': {
+            \      '+': 'powershell.exe -NoLogo -NoProfile -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+            \      '*': ['tmux', 'save-buffer', '-'],
+            \   },
+            \   'cache_enabled': 0,
+            \ }
+
+
 " Tab compketion and documentation
 " autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
