@@ -51,7 +51,7 @@ vnoremap * y :execute ":let @/=@\""<CR> :execute "set hlsearch"<CR>
 
 "vnoremap Y :execute ":!pbcopy"<CR> u
 "vnoremap Y :execute ":!clip.exe"<CR> u
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " Tab compketion and documentation
 " autocmd FileType python set omnifunc=pythoncomplete#Complete
