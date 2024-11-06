@@ -13,8 +13,10 @@ return {
     -- change some options
     opts = {
       defaults = {
-        layout_strategy = "horizontal",
-        layout_config = { prompt_position = "top" },
+        layout_strategy = "flex",
+        layout_config = {
+          prompt_position = "bottom",
+        },
         sorting_strategy = "ascending",
         winblend = 0,
       },
@@ -25,19 +27,18 @@ return {
       telescope.setup({
         pickers = {
           live_grep = {
-            file_ignore_patterns = { 'node_modules', '.git', '.venv' },
+            file_ignore_patterns = { "node_modules", ".git", ".venv" },
             additional_args = function(_)
               return { "--hidden" }
-            end
+            end,
           },
           find_files = {
-            file_ignore_patterns = { 'node_modules', '.git', '.venv' },
-            hidden = true
-          }
-
+            file_ignore_patterns = { "node_modules", ".git", ".venv" },
+            hidden = true,
+          },
         },
         extensions = {
-          "fzf"
+          "fzf",
         },
       })
       telescope.load_extension("fzf")
