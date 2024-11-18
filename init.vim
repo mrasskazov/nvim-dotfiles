@@ -4,9 +4,10 @@ lua require("config.lazy")
 "colorscheme evening
 "colorscheme murphy
 "colorscheme wildcharm
-colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-colorscheme catppuccin-mocha
+"colorscheme catppuccin " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+"colorscheme catppuccin-mocha
 "colorscheme tokyonight-night
+colorscheme carbonfox
 syntax on
 set belloff=all
 
@@ -23,6 +24,7 @@ set smartindent
 set nowrap
 set number
 set norelativenumber
+set nocursorline
 
 set iskeyword+=-
 "set cc=80
