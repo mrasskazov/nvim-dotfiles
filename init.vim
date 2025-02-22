@@ -62,8 +62,11 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 let g:SuperTabDefaultCompletionType = "context"
 
-au BufRead,BufNewFile *.yaml set filetype=yaml
-au BufRead,BufNewFile *.yml set filetype=yaml
+"au BufRead,BufNewFile *.yaml set filetype=yaml
+"au BufRead,BufNewFile *.yml set filetype=yaml
+au BufRead,BufNewFile *.yaml set syntax=yaml
+au BufRead,BufNewFile *.yml set syntax=yaml
+au BufRead,BufNewFile *.tpl set syntax=yaml
 au BufRead,BufNewFile *.ctmpl set filetype=liquid
 au BufRead,BufNewFile *.ctpl set filetype=liquid
 au BufRead,BufNewFile *.Dockerfile set filetype=dockerfile
