@@ -8,7 +8,7 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  { "echasnovski/mini.pairs", enabled = false },
+  { "nvim-mini/mini.pairs", enabled = false },
   { "folke/noice.nvim", enabled = false },
   { "rcarriga/nvim-notify", enabled = false },
   --{ "MunifTanjim/nui.nvim", enabled = false },
