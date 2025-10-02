@@ -11,6 +11,6 @@ return {
   --keys = {
   --},
   config = function()
-    require("neo-tree").setup()
+    require("neo-tree").setup({})
   end,
 }
