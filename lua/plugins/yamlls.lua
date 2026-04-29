@@ -16,6 +16,7 @@ return {
               --["https://example.com/my-custom-schema.json"] = "**/my-file.yaml",
               --["/path/to/my/local-schema.json"] = "**/another-file.yaml",
               ["~/code/sfera.inno.local/PRSM_DEPLOY/dreampipe_six/docs/config/md/dp.schema.md"] = "~/code/sfera.inno.local/PRSM_DEPLOY/dreampipe_six/config/**.yaml",
+              ["~/code/sfera.inno.local/PRSM_DEPLOY/dreampipe_six/config/schema/dp.schema.yaml"] = "~/code/sfera.inno.local/PRSM_DEPLOY/dreampipe_six/config/**.yaml",
             },
           },
         },
